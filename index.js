@@ -1407,4 +1407,77 @@ console.log("End");
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //i will comeback soon to complete this js learning thank you
-//18/09/2023
+//02/10/2023-66
+//promise= object that encapsulate the result of an asynchronus operation 
+//let asynchronus methods return the value like   synchronus methods  "I promise to retrun something in the future"
+/*
+const promise= new promise((resolve,reject)=>{
+   let fileLoaded=true;
+   if(fileLoaded){
+      resolve("file is loaded");
+   }else{
+      reject("file is not loaded")
+   }
+})
+ promise.then(value=> console.log(value))
+      .catch(error=>console.log(error));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const wait= time=> new promise(resolve=>{
+   setTimeout(resolve,time);
+});
+wait(3000).then(()=>console.log("Thanks for waiting!"));*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//async =makes  a function to return a promise 
+/*
+  async function loadFile(){
+   let fileLoaded=true;
+   if(fileLoaded){
+      return "file is fileLoaded";
+   }else{
+      throw "file is not loaded";
+   }
+  }
+  loadFile().then(value => console.log(value))
+            .catch(error =>console.log(error));*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//await=makes async function wait for promise 
+/*
+ async function loadFile(){
+   let fileLoaded=true;
+   if(fileLoaded){
+      return "file is loaded";
+   }else{
+      throw "file is not loaded";
+   }
+ }
+ async function startProcess(){
+   try{
+      let Message= await loadFile();
+      console.log(Message)
+   }catch(error){
+      console.log(error);
+   }
+ }
+ startProcess();*/
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //DOM=  document object model(API)
+ // AN interface  for changing  the content of a page
+ /* 
+ console.dir(document);
+ console.log(document.title);
+ console.log(document.url);
+ //document.title ="Title goes here ";
+ document.location ="http:/google.com"*/
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //add/change Html elemnt 
+ /*
+ const myList =document.querySelector("#fruits")
+ const listItem= document.createElement("li")
+ listItem.textContent ="Mango";
+ myList.append(listItem)
+ myList.prepend(listItem)
+ myList.insertBefore(listItem,myList.getElementsByTagName('li')[2])
+ */
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+git
+   
