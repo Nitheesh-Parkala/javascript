@@ -1478,6 +1478,141 @@ wait(3000).then(()=>console.log("Thanks for waiting!"));*/
  myList.prepend(listItem)
  myList.insertBefore(listItem,myList.getElementsByTagName('li')[2])
  */
+// const nameTag = document.createElement("h1");
+// nameTag.innerHTML= "Bro";
+// document.body.append(nameTag);
+// const nameTag = document.createElement("h1");
+// nameTag.innerHTML = window.prompt("enter your name");
+// document.body.append(nameTag);
+// const myList = document.querySelector("#fruits");
+// const listItem =document.createElement("li");
+// listItem.textContent="mango";
+// myList.append(listItem);
+// myList.prepend(listItem);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-git
-   
+//adding css properties 
+// const title = document.getElementById("myTitle");
+// title.style.backgroundColor = "pink"
+// title.style.color ="red";
+// title.style.border ="2px solid"
+// title.style.textAlign ="center";
+// title.style.fontSize= "51px";
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//events---- events are the some actions that user or browser does many html elemnts contain the events artibutes
+
+// const element = document.getElementById("myButton");
+// element.onclick = doSomething;
+// const element = document.body;
+// const element = document.getElementById("myText")
+// element.onchange =doSomething;
+// element.onload =doSomething;
+
+// const element =document.getElementById("myDiv");
+// // element.onmouseover = doSomething;
+// // element.onmouseout = doSomethingElse;
+// element.onmousedown =doSomething;
+// function doSomething(){
+//    // alert("you did something")
+//    element.style.backgroundColor = "blue"
+// }
+
+// function doSomethingElse(){
+//    // alert("you did something")
+//    element.style.backgroundColor = "red"
+// }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// .addEventListener(event ,function,useCapture)
+//you can add many event handlers to one element
+//even the same event that invokes different functions 
+
+// const innerDiv = document.getElementById("i");
+// const outer = document.getElementById("outer");
+
+// innerDiv.addEventListener("click",changeRed);
+// outer.addEventListener("click", changeRed, true)
+
+// function changeRed(){
+//    alert(`u slected ${this.id}`)
+//   this.style.backgroundColor = "red";
+// }
+// function changeblue(){
+//    outer.style.backgroundColor = "green";
+//  }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// show and hide the html element
+// const myButton = document.querySelector("#myButton");
+// const myImage = document.querySelector("#myImg");
+
+// myButton.addEventListener("click", ()=>{
+//    if(myImage.style.display == "none"){
+//       myImage.style.display ="block";
+//    }else{
+//       myImage.style.display ="none";
+//    }
+// })
+// const myButton = document.querySelector("#myButton");
+// const myImage = document.querySelector("#myImg");
+
+// myButton.addEventListener("click", ()=>{
+//    if(myImage.style.visibility == "hidden"){
+//       myImage.style.visibility ="visible";
+//    }else{
+//       myImage.style.visibility ="hidden";
+//    }
+// })
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// const Div = document.getElementById("myDiv");
+// window.addEventListener("keyup", move);
+// let x=0;
+// let y=0;
+// function move(event){
+// switch(event.key){
+
+//    case "ArrowDowm":
+//       y += 5;
+//       Div.style.top = y + "px";
+//      break;
+
+//    case "ArrowUp":
+//       y -=5;
+//       Div.style.top = y+ "px";
+//       break;
+//       case "ArrowRight":
+//          x +=5;
+//          Div.style.left= y+ "px";
+//          break;
+//          case "ArrowLeft":
+//             x -=5;
+//             Div.style.left= y+ "px";
+//             break;
+// }
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const myButton = document.getElementById("myButton");
+const myDiv = document.getElementById("myDiv");
+
+myButton.addEventListener("click", begin);
+
+function begin(){
+   let timerId=null;
+   let x =0;
+   let y =0;
+
+
+timerId = setInterval(frame, 5);
+
+function frame(){
+   if(x >= 200 || y>=200){
+      clearInterval(timerId);
+   }
+   else{
+      x+=1;
+      y+=1;
+      myAnimation.style.left =x + "px";
+      myAnimation.style.top =y+"px";
+   }
+}
+}

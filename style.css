@@ -1,5 +1,35 @@
-#countLabel{
+/* #countLabel{
     display: block;
     text-align: center;
     font-size: 50px;
+} */
+/* #myDiv{
+    background-color: red;
+    width: 50px;
+    height: 100px;
+} */
+
+/* #i{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+}
+#outer{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border: 2px solid;
+} */
+/* #myImg{
+    visibility: hidden;;
+    width:200px;
+} */
+
+#myDiv{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    position: relative;
 }
