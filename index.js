@@ -1591,28 +1591,55 @@ wait(3000).then(()=>console.log("Thanks for waiting!"));*/
 // }
 // }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const myButton = document.getElementById("myButton");
-const myDiv = document.getElementById("myDiv");
+// const myButton = document.getElementById("myButton");
+// const myDiv = document.getElementById("myDiv");
 
-myButton.addEventListener("click", begin);
+// myButton.addEventListener("click", begin);
 
-function begin(){
-   let timerId=null;
-   let x =0;
-   let y =0;
+// function begin(){
+//    let timerId=null;
+//    let x =0;
+//    let y =0;
 
 
-timerId = setInterval(frame, 5);
+// timerId = setInterval(frame, 5);
 
-function frame(){
-   if(x >= 200 || y>=200){
-      clearInterval(timerId);
-   }
-   else{
-      x+=1;
-      y+=1;
-      myAnimation.style.left =x + "px";
-      myAnimation.style.top =y+"px";
-   }
-}
-}
+// function frame(){
+//    if(x >= 200 || y>=200){
+//       clearInterval(timerId);
+//    }
+//    else{
+//       x+=1;
+//       y+=1;
+//       myAnimation.style.left =x + "px";
+//       myAnimation.style.top =y+"px";
+//    }
+// }
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//canvas api
+//it is used for games,animations and data visulaization
+// let canvas = document.getElementById("myCanvas");
+// let context = canvas.getContext("2d");
+//draw lines   
+// context.strokeStyle ="purple";
+// context.lineWidth = 10;
+// context.beginPath();
+// context.moveTo(0,0);
+// context.lineTo(250,250);
+// context.lineTo(250,500);
+// context.moveTo(500,0);
+// context.lineTo(250,250);
+// context.stroke();
+//draw triangle
+// context.beginPath();
+// context.moveTo(250,0);
+// context.lineTo(0, 250);
+// context.lineTo(500,250);
+// context.lineTo(0,250);
+// context.stroke();
+//draw text
+// context.font = "50px MV Boli";
+// context.fillStyle = "grey";
+// context.textAlign = "center";
+// context.fillText("You Win!", canvas.width /2, canvas.heigth /2);

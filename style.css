@@ -25,11 +25,16 @@
     visibility: hidden;;
     width:200px;
 } */
-
+/* 
 #myDiv{
     background-color: gray;
     width: 100px;
     height: 100px;
     border: 1px solid;
     position: relative;
+} */
+
+#myCanvas{
+    /* background-color: aqua; */
+    border: 1px solid black;
 }
